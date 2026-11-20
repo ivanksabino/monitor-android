@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Feature Feed (aba Início). Locale base do app: pt-BR. -->
+<resources>
+    <string name="feed_titulo">Quem você segue</string>
+    <string name="feed_carregando">Carregando quem você segue</string>
+    <string name="feed_vazio">Você ainda não segue ninguém.</string>
+    <string name="feed_erro">Não foi possível carregar quem você segue.</string>
+    <string name="feed_tentar_de_novo">Tentar de novo</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Feature Ajustes. Locale base do app: pt-BR. -->
+<resources>
+    <string name="ajustes_titulo">Você</string>
+    <string name="ajustes_em_construcao">Em construção</string>
+</resources>

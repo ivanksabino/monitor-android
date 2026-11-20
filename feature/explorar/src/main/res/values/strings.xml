@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Feature Explorar. Locale base do app: pt-BR. -->
+<resources>
+    <string name="explorar_titulo">Explorar</string>
+    <string name="explorar_em_construcao">Em construção</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Design System. Locale base do app: pt-BR. Prefixo ds_ para não colidir com strings das features. -->
+<resources>
+    <!-- Locale dos números e datas: acompanha a tradução das strings, não o aparelho. -->
+    <string name="ds_locale_tag" translatable="false">pt-BR</string>
+
+    <!-- Datas (padrões de java.time) -->
+    <string name="ds_data_curta_padrao">dd/MM</string>
+    <string name="ds_data_longa_padrao">d \'de\' MMMM \'de\' yyyy</string>
+
+    <!-- Dinheiro: visual -->
+    <string name="ds_moeda_completa">R$ %1$s</string>
+    <string name="ds_moeda_compacta_reais">R$ %1$s</string>
+    <string name="ds_moeda_compacta_mil">R$ %1$s mil</string>
+    <string name="ds_moeda_compacta_milhao">R$ %1$s mi</string>
+    <string name="ds_moeda_compacta_bilhao">R$ %1$s bi</string>
+    <string name="ds_percentual">%1$s%%</string>
+
+    <!-- Dinheiro: por extenso abreviado, para o leitor de tela -->
+    <plurals name="ds_extenso_reais">
+        <item quantity="one">%1$s real</item>
+        <item quantity="other">%1$s reais</item>
+    </plurals>
+    <string name="ds_extenso_mil_reais">%1$s mil reais</string>
+    <plurals name="ds_extenso_milhoes_reais">
+        <item quantity="one">%1$s milhão de reais</item>
+        <item quantity="other">%1$s milhões de reais</item>
+    </plurals>
+    <plurals name="ds_extenso_bilhoes_reais">
+        <item quantity="one">%1$s bilhão de reais</item>
+        <item quantity="other">%1$s bilhões de reais</item>
+    </plurals>
+
+    <!-- Presença -->
+    <plurals name="ds_presenca_resumo">
+        <item quantity="one">Presente em %1$d de %2$d sessão</item>
+        <item quantity="other">Presente em %1$d das últimas %2$d sessões</item>
+    </plurals>
+    <string name="ds_presenca_sem_dados">Sem sessões registradas</string>
+    <string name="ds_presenca_faltas">%1$s; faltou %2$s</string>
+    <string name="ds_presenca_ordinal">na %1$dª</string>
+    <string name="ds_presenca_placar_visual">%1$d/%2$d</string>
+
+    <!-- Listas faladas: "a, b e c" -->
+    <string name="ds_lista_separador">", "</string>
+    <string name="ds_lista_ultimo_separador">" e "</string>
+    <string name="ds_rotulo_valor">%1$s: %2$s</string>
+
+    <!-- Post -->
+    <string name="ds_post_tipo_apresentou">Apresentou projeto</string>
+    <string name="ds_post_tipo_votou">Votou</string>
+    <string name="ds_post_tipo_gastou">Gastou</string>
+    <string name="ds_post_tipo_discursou">Discursou</string>
+    <string name="ds_post_titulo_a11y">%1$s, %2$s. %3$s</string>
+    <string name="ds_post_titulo_generico_a11y">%1$s. %2$s</string>
+    <string name="ds_post_ver_explicacao">Ver explicação</string>
+    <string name="ds_post_ver_explicacao_a11y">Ver explicação: %1$s</string>
+    <string name="ds_post_fonte">Fonte: %1$s</string>
+    <string name="ds_placar_visual_sim">Sim %1$d</string>
+    <string name="ds_placar_visual_nao">Não %1$d</string>
+    <string name="ds_placar_visual_abstencao">Abst. %1$d</string>
+    <string name="ds_placar_a11y">Placar: %1$s</string>
+    <plurals name="ds_placar_sim">
+        <item quantity="one">%1$d voto sim</item>
+        <item quantity="other">%1$d votos sim</item>
+    </plurals>
+    <plurals name="ds_placar_nao">
+        <item quantity="one">%1$d voto não</item>
+        <item quantity="other">%1$d votos não</item>
+    </plurals>
+    <plurals name="ds_placar_abstencao">
+        <item quantity="one">%1$d abstenção</item>
+        <item quantity="other">%1$d abstenções</item>
+    </plurals>
+
+    <!-- Rodapé de lista paginada -->
+    <string name="ds_lista_carregando">Carregando mais</string>
+    <string name="ds_lista_erro">Não foi possível carregar mais.</string>
+    <string name="ds_lista_tentar_de_novo">Tentar de novo</string>
+    <string name="ds_lista_fim">Você chegou ao fim da lista</string>
+
+    <!-- Pessoa -->
+    <string name="ds_cargo_deputada_federal">Deputada federal</string>
+    <string name="ds_cargo_deputado_federal">Deputado federal</string>
+    <string name="ds_cargo_senadora">Senadora</string>
+    <string name="ds_cargo_senador">Senador</string>
+    <string name="ds_pessoa_subtitulo">%1$s · %2$s · %3$s</string>
+    <string name="ds_pessoa_falada">%1$s, %2$s, %3$s, %4$s</string>
+    <string-array name="ds_uf_siglas" translatable="false">
+        <item>AC</item><item>AL</item><item>AP</item><item>AM</item><item>BA</item><item>CE</item><item>DF</item>
+        <item>ES</item><item>GO</item><item>MA</item><item>MT</item><item>MS</item><item>MG</item><item>PA</item>
+        <item>PB</item><item>PR</item><item>PE</item><item>PI</item><item>RJ</item><item>RN</item><item>RS</item>
+        <item>RO</item><item>RR</item><item>SC</item><item>SP</item><item>SE</item><item>TO</item>
+    </string-array>
+    <string-array name="ds_uf_nomes">
+        <item>Acre</item><item>Alagoas</item><item>Amapá</item><item>Amazonas</item><item>Bahia</item><item>Ceará</item>
+        <item>Distrito Federal</item><item>Espírito Santo</item><item>Goiás</item><item>Maranhão</item><item>Mato Grosso</item>
+        <item>Mato Grosso do Sul</item><item>Minas Gerais</item><item>Pará</item><item>Paraíba</item><item>Paraná</item>
+        <item>Pernambuco</item><item>Piauí</item><item>Rio de Janeiro</item><item>Rio Grande do Norte</item>
+        <item>Rio Grande do Sul</item><item>Rondônia</item><item>Roraima</item><item>Santa Catarina</item><item>São Paulo</item>
+        <item>Sergipe</item><item>Tocantins</item>
+    </string-array>
+
+    <!-- Estados genéricos -->
+    <string name="ds_carregando">Carregando</string>
+</resources>

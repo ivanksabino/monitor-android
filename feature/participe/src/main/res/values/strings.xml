@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Feature Participe. Locale base do app: pt-BR. -->
+<resources>
+    <string name="participe_titulo">Participe</string>
+    <string name="participe_em_construcao">Em construção</string>
+</resources>

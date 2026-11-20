@@ -1,0 +1,430 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "a9d23b4ec7db736b56d7617882f21d0f",
+    "entities": [
+      {
+        "tableName": "pessoa",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `nome` TEXT NOT NULL, `cargo` TEXT NOT NULL, `partido` TEXT NOT NULL, `uf` TEXT NOT NULL, `iniciais` TEXT NOT NULL, `em_exercicio` INTEGER NOT NULL, `atualizado_em` TEXT NOT NULL, `salvo_em` INTEGER NOT NULL, `mandato_inicio` INTEGER NOT NULL, `mandato_fim` INTEGER NOT NULL, `mandato_numero` INTEGER NOT NULL, `resumo_ano` INTEGER NOT NULL, `resumo_presenca_pct` INTEGER NOT NULL, `resumo_projetos_apresentados` INTEGER NOT NULL, `resumo_cota_centavos` INTEGER NOT NULL, `resumo_emendas_indicadas_centavos` INTEGER NOT NULL, `numeros_presenca_ultimas` TEXT NOT NULL, `numeros_cota_centavos` INTEGER NOT NULL, `numeros_emendas_pagas_centavos` INTEGER NOT NULL, `numeros_emendas_indicadas_centavos` INTEGER NOT NULL, `numeros_patrimonio_tse_ano` INTEGER NOT NULL, `numeros_patrimonio_tse_centavos` INTEGER NOT NULL, `numeros_votou_com_partido_pct` INTEGER NOT NULL, `numeros_fontes` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nome",
+            "columnName": "nome",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cargo",
+            "columnName": "cargo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "partido",
+            "columnName": "partido",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "uf",
+            "columnName": "uf",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "iniciais",
+            "columnName": "iniciais",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "emExercicio",
+            "columnName": "em_exercicio",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "atualizadoEm",
+            "columnName": "atualizado_em",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "salvoEm",
+            "columnName": "salvo_em",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mandato.inicio",
+            "columnName": "mandato_inicio",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mandato.fim",
+            "columnName": "mandato_fim",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mandato.numero",
+            "columnName": "mandato_numero",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "resumo.ano",
+            "columnName": "resumo_ano",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "resumo.presencaPct",
+            "columnName": "resumo_presenca_pct",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "resumo.projetosApresentados",
+            "columnName": "resumo_projetos_apresentados",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "resumo.cotaCentavos",
+            "columnName": "resumo_cota_centavos",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "resumo.emendasIndicadasCentavos",
+            "columnName": "resumo_emendas_indicadas_centavos",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "numeros.presencaUltimas",
+            "columnName": "numeros_presenca_ultimas",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "numeros.cotaCentavos",
+            "columnName": "numeros_cota_centavos",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "numeros.emendasPagasCentavos",
+            "columnName": "numeros_emendas_pagas_centavos",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "numeros.emendasIndicadasCentavos",
+            "columnName": "numeros_emendas_indicadas_centavos",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "numeros.patrimonioTseAno",
+            "columnName": "numeros_patrimonio_tse_ano",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "numeros.patrimonioTseCentavos",
+            "columnName": "numeros_patrimonio_tse_centavos",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "numeros.votouComPartidoPct",
+            "columnName": "numeros_votou_com_partido_pct",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "numeros.fontes",
+            "columnName": "numeros_fontes",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "post",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `tipo` TEXT NOT NULL, `pessoa_id` TEXT NOT NULL, `publicado_em` TEXT NOT NULL, `titulo` TEXT NOT NULL, `corpo` TEXT NOT NULL, `blocos` TEXT NOT NULL, `tem_explicacao` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tipo",
+            "columnName": "tipo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pessoaId",
+            "columnName": "pessoa_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "publicadoEm",
+            "columnName": "publicado_em",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "titulo",
+            "columnName": "titulo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "corpo",
+            "columnName": "corpo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "blocos",
+            "columnName": "blocos",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "temExplicacao",
+            "columnName": "tem_explicacao",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_post_pessoa_id",
+            "unique": false,
+            "columnNames": [
+              "pessoa_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_post_pessoa_id` ON `${TABLE_NAME}` (`pessoa_id`)"
+          }
+        ]
+      },
+      {
+        "tableName": "feed_pagina",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`feed` TEXT NOT NULL, `ordem` INTEGER NOT NULL, `cursor` TEXT, `proximo_cursor` TEXT, `post_ids` TEXT NOT NULL, `salvo_em` INTEGER NOT NULL, PRIMARY KEY(`feed`, `ordem`))",
+        "fields": [
+          {
+            "fieldPath": "feed",
+            "columnName": "feed",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ordem",
+            "columnName": "ordem",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cursor",
+            "columnName": "cursor",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "proximoCursor",
+            "columnName": "proximo_cursor",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "postIds",
+            "columnName": "post_ids",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "salvoEm",
+            "columnName": "salvo_em",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "feed",
+            "ordem"
+          ]
+        }
+      },
+      {
+        "tableName": "seguido",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`pessoa_id` TEXT NOT NULL, `nome` TEXT NOT NULL, `cargo` TEXT NOT NULL, `partido` TEXT NOT NULL, `uf` TEXT NOT NULL, `iniciais` TEXT NOT NULL, `seguindo` INTEGER NOT NULL, `atualizado_em` INTEGER NOT NULL, PRIMARY KEY(`pessoa_id`))",
+        "fields": [
+          {
+            "fieldPath": "pessoaId",
+            "columnName": "pessoa_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nome",
+            "columnName": "nome",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cargo",
+            "columnName": "cargo",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "partido",
+            "columnName": "partido",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "uf",
+            "columnName": "uf",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "iniciais",
+            "columnName": "iniciais",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "seguindo",
+            "columnName": "seguindo",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "atualizadoEm",
+            "columnName": "atualizado_em",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "pessoa_id"
+          ]
+        }
+      },
+      {
+        "tableName": "fila_envio",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `pessoa_id` TEXT NOT NULL, `seguir` INTEGER NOT NULL, `estado_no_servidor` INTEGER NOT NULL, `criado_em` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pessoaId",
+            "columnName": "pessoa_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "seguir",
+            "columnName": "seguir",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "estadoNoServidor",
+            "columnName": "estado_no_servidor",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "criadoEm",
+            "columnName": "criado_em",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_fila_envio_pessoa_id",
+            "unique": true,
+            "columnNames": [
+              "pessoa_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_fila_envio_pessoa_id` ON `${TABLE_NAME}` (`pessoa_id`)"
+          }
+        ]
+      },
+      {
+        "tableName": "controle",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`chave` TEXT NOT NULL, `valor` TEXT NOT NULL, PRIMARY KEY(`chave`))",
+        "fields": [
+          {
+            "fieldPath": "chave",
+            "columnName": "chave",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "valor",
+            "columnName": "valor",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "chave"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'a9d23b4ec7db736b56d7617882f21d0f')"
+    ]
+  }
+}

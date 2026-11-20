@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Feature Perfil (tela 01). Locale base do app: pt-BR. -->
+<resources>
+    <!-- Capa -->
+    <string name="perfil_voltar">Voltar</string>
+    <string name="perfil_compartilhar_a11y">Compartilhar perfil de %1$s</string>
+
+    <!-- Status -->
+    <string name="perfil_status_em_exercicio">Em exercício</string>
+    <string name="perfil_status_fora_de_exercicio">Fora de exercício</string>
+    <string name="perfil_status_mandato">Mandato %1$d–%2$d</string>
+    <string name="perfil_status_numero_mandato">%1$dº mandato</string>
+
+    <!-- Seguir e Alertas -->
+    <string name="perfil_seguir">Seguir</string>
+    <string name="perfil_seguindo">Seguindo</string>
+    <string name="perfil_seguir_a11y">Seguir %1$s</string>
+    <string name="perfil_estado_seguindo">seguindo</string>
+    <string name="perfil_estado_nao_seguindo">não seguindo</string>
+    <string name="perfil_seguir_falhou">Não foi possível seguir %1$s. Tente de novo.</string>
+    <string name="perfil_deixar_de_seguir_falhou">Não foi possível deixar de seguir %1$s. Tente de novo.</string>
+    <string name="perfil_alertas">Alertas</string>
+
+    <!-- Segmentado -->
+    <string name="perfil_segmento_resumo">Resumo</string>
+    <string name="perfil_segmento_numeros">Em números</string>
+
+    <!-- Resumo -->
+    <string name="perfil_resumo_titulo">Resumo do mandato em %1$d</string>
+    <string name="perfil_stat_presenca_legenda">de presença</string>
+    <string name="perfil_stat_presenca_a11y">%1$s de presença</string>
+    <plurals name="perfil_stat_projetos_legenda">
+        <item quantity="one">projeto apresentado</item>
+        <item quantity="other">projetos apresentados</item>
+    </plurals>
+    <plurals name="perfil_stat_projetos_a11y">
+        <item quantity="one">%1$d projeto apresentado</item>
+        <item quantity="other">%1$d projetos apresentados</item>
+    </plurals>
+    <string name="perfil_stat_cota_legenda">da cota em %1$d</string>
+    <string name="perfil_stat_cota_a11y">%1$s da cota em %2$d</string>
+    <string name="perfil_stat_emendas_legenda">em emendas indicadas</string>
+    <string name="perfil_stat_emendas_a11y">%1$s em emendas indicadas</string>
+
+    <!-- Em números (chaves técnicas no visual, texto humano para o leitor) -->
+    <string name="perfil_numeros_titulo">Em números do mandato em %1$d</string>
+    <string name="perfil_numeros_presenca_overline">Presença · últimas %1$d sessões</string>
+    <string name="perfil_numeros_presenca_titulo">Presença nas últimas %1$d sessões</string>
+    <string name="perfil_numeros_cota_chave" translatable="false">cota_%1$d</string>
+    <string name="perfil_numeros_cota_a11y">Cota parlamentar em %1$d: %2$s</string>
+    <string name="perfil_numeros_emendas_chave" translatable="false">emendas_pagas</string>
+    <string name="perfil_numeros_emendas_valor">%1$s / %2$s</string>
+    <string name="perfil_numeros_emendas_a11y">Emendas pagas: %1$s de %2$s indicados</string>
+    <string name="perfil_numeros_patrimonio_chave" translatable="false">patrimonio_tse_%1$d</string>
+    <string name="perfil_numeros_patrimonio_a11y">Patrimônio declarado ao TSE em %1$d: %2$s</string>
+    <string name="perfil_numeros_votou_chave" translatable="false">votou_com_partido</string>
+    <string name="perfil_numeros_votou_a11y">Votou com o partido em %1$s das votações</string>
+    <string name="perfil_numeros_fontes">fontes: %1$s</string>
+    <string name="perfil_numeros_fontes_a11y">Fontes: %1$s</string>
+    <string name="perfil_numeros_fontes_separador">" · "</string>
+
+    <!-- Seções -->
+    <string name="perfil_secao_posts">Posts</string>
+    <string name="perfil_secao_sobre">Sobre</string>
+    <string name="perfil_secao_atuacao">Atuação</string>
+    <string name="perfil_secao_dinheiro">Dinheiro</string>
+    <string name="perfil_secao_votos">Votos</string>
+    <string name="perfil_secao_imprensa">Imprensa</string>
+    <string name="perfil_secao_em_breve">Em breve</string>
+
+    <!-- Lista de posts -->
+    <string name="perfil_posts_carregando_primeira">Carregando posts</string>
+    <string name="perfil_posts_carregando">Carregando mais posts</string>
+    <string name="perfil_posts_erro">Não foi possível carregar os posts.</string>
+    <string name="perfil_posts_fim">Você viu todos os posts</string>
+    <string name="perfil_tentar_de_novo">Tentar de novo</string>
+
+    <!-- Estados da tela -->
+    <string name="perfil_titulo_tela">Perfil</string>
+    <string name="perfil_carregando">Carregando perfil</string>
+    <string name="perfil_dados_salvos">Mostrando dados salvos</string>
+    <string name="perfil_atualizar">Atualizar perfil</string>
+    <string name="perfil_erro_sem_conexao">Sem conexão. Confira a internet e tente de novo.</string>
+    <string name="perfil_erro_nao_encontrado">Perfil não encontrado.</string>
+    <string name="perfil_erro_muitas_requisicoes">Muitas tentativas seguidas. Aguarde um pouco e tente de novo.</string>
+    <string name="perfil_erro_generico">Não foi possível carregar o perfil.</string>
+
+    <!-- Placeholder do post -->
+    <string name="post_titulo">Post</string>
+    <string name="post_em_construcao">Em construção</string>
+</resources>

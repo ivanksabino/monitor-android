@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Locale base do app: pt-BR. -->
+<resources>
+    <string name="app_name">Monitor Cidadão</string>
+
+    <!-- Barra de abas -->
+    <string name="tab_inicio">Início</string>
+    <string name="tab_explorar">Explorar</string>
+    <string name="tab_entenda">Entenda</string>
+    <string name="tab_participe">Participe</string>
+    <string name="tab_voce">Você</string>
+
+    <!-- Sheets (placeholders) -->
+    <string name="sheet_alertas_titulo">Alertas — em breve</string>
+    <string name="sheet_alertas_texto">Logo você vai poder receber um aviso quando houver novidade sobre esta pessoa.</string>
+    <string name="sheet_compartilhar_titulo">Compartilhar — em breve</string>
+    <string name="sheet_compartilhar_texto">Em breve você vai poder compartilhar este conteúdo.</string>
+    <string name="sheet_filtro_titulo">Filtros — em breve</string>
+    <string name="sheet_filtro_texto">Em breve você vai poder filtrar esta lista.</string>
+    <string name="sheet_fechar">Fechar</string>
+
+    <!-- Destinos ainda sem feature -->
+    <string name="rota_em_construcao_titulo">Em breve</string>
+    <string name="rota_em_construcao">Em construção</string>
+</resources>
